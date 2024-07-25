@@ -1,0 +1,36 @@
+:root {
+  --bg-gradient: radial-gradient(
+    55.82% 73.08% at 49.97% 53.46%,
+    #161212 0%,
+    #000 100%
+  );
+
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(255, 255, 255);
+  --bg-color: rgb(253, 253, 253);
+  --bg-button-color: rgba(255, 255, 255, 0.08);
+  --secondary-text-color: rgba(0, 0, 0, 0.6);
+  --tertiary-text-color: rgba(255, 255, 255, 0.6);
+
+  --inria-serif: 'Inria Serif', sans-serif;
+  --inter: 'Inter', sans-serif;
+}
+
+$bg-gradient: var(--bg-gradient);
+
+$black-color: var(--black-color);
+$white-color: var(--white-color);
+$bg-color: var(--bg-color);
+$bg-button-color: var(--bg-button-color);
+$secondary-text-color: var(--secondary-text-color);
+$tertiary-text-color: var(--tertiary-text-color);
+
+$inria-serif: var(--inria-serif);
+$inter: var(--inter);
+
+$h1-size: var(--h1-size);
+$h2-size: var(--h2-size);
+$h3-size: var(--h3-size);
+$normal-size: var(--normal-size);
+$ex-small-size: var(--ex-small-size);
+$link-size: var(--link-size);

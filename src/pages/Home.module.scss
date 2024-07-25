@@ -1,0 +1,132 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.hero {
+  &__banner {
+    height: 300vh;
+  }
+  &__layer {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+    animation-fill-mode: both;
+    animation-range: 0 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__background {
+    background: radial-gradient(
+      55.82% 73.08% at 49.97% 53.46%,
+      #211c1c 0%,
+      #000 100%
+    );
+    animation-name: hero-background;
+  }
+  @keyframes hero-background {
+    to {
+      scale: 1.2;
+    }
+  }
+
+  &__image {
+    background-image: url(../assets/images/cave.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: hero-image;
+  }
+  @keyframes hero-image {
+    to {
+      scale: 1.8;
+    }
+  }
+
+  &__first_text {
+    color: $white-color;
+    text-align: center;
+    font-family: $inria-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    animation-name: first-text;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+    animation-fill-mode: both;
+    animation-range: 0 50vh;
+  }
+
+  @keyframes first-text {
+    to {
+      opacity: 0;
+      scale: 0.5;
+    }
+  }
+
+  &__content {
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation-name: hero-content;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+    animation-fill-mode: both;
+    animation-range: 50vh 150vh;
+    scale: 0.5;
+    @include max-width(1024px) {
+      max-width: 500px;
+    }
+    @include max-width(768px) {
+      max-width: 300px;
+    }
+  }
+  @keyframes hero-content {
+    to {
+      opacity: 1;
+      scale: 0.6;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Inria Serif';
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    padding-bottom: 32px;
+
+    @include max-width(1024px) {
+      font-size: 48px;
+      line-height: 46px;
+    }
+
+    @include max-width(768px) {
+      font-size: 32px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    max-width: 640px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 48px;
+  }
+}

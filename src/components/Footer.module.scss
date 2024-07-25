@@ -1,0 +1,31 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px;
+  @include max-width(768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__copy,
+  &__link {
+    color: $white-color;
+    font-family: $inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include max-width(768px) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.button {
+  position: relative;
+  cursor: pointer;
+  background-color: $bg-button-color;
+  width: 240px;
+  height: 60px;
+  border-radius: 100px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: $white-color;
+  font-family: $inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.3s ease; // Transition for border color
+  clip-path: stroke-box;
+
+  &:hover {
+    border: 0.5px solid rgba(255, 255, 255, 0.528);
+  }
+
+  @media (max-width: 48rem) {
+    width: 9.47475rem;
+    height: 2.8rem;
+    font-size: 14px;
+  }
+
+  .button__ellipse_left,
+  .button__ellipse_right {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: blur(20px);
+    transition: transform 5s linear;
+  }
+
+  .button__ellipse_left {
+    top: -100px;
+    left: -20px;
+  }
+
+  .button__ellipse_right {
+    bottom: -100px;
+    right: -20px;
+  }
+
+  &:hover .button__ellipse_left {
+    transform: translate(300px, 50px);
+  }
+
+  &:hover .button__ellipse_right {
+    transform: translate(-300px, -50px);
+  }
+}
