@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectDetails from '../../components/ProjectDetails';
 import ai1 from '../../assets/images/ai1.png';
 import ai2 from '../../assets/images/ai2.png';

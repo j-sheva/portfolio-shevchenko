@@ -1,11 +1,11 @@
 // src/components/Footer.jsx
-import React from 'react';
+
 import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p className={styles.footer__copy}>© Yuliia Shevchenko 2024</p>
+      <p className={styles.footer__copy}>© Yuliia Shevchenko 2025</p>
       <ul className={styles.footer__links}>
         <li className={styles.footer__link}>
           <a
@@ -23,15 +23,6 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             Behance
-          </a>
-        </li>
-        <li className={styles.footer__link}>
-          <a
-            href="mailto:work.uliia@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Email
           </a>
         </li>
       </ul>

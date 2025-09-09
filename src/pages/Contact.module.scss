@@ -112,6 +112,11 @@
   &__right {
     display: flex;
     gap: 16px;
+
+    img {
+      width: 271px;
+      height: 362px;
+    }
     @include max-width(1024px) {
       img {
         display: none;

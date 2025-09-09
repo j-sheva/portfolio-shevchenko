@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import styles from './About.module.scss';
@@ -10,6 +9,7 @@ import nlLogo from '../assets/svg/nl.svg';
 import supLogo from '../assets/svg/sup.svg';
 import vrLogo from '../assets/svg/vr.svg';
 import pdf from '../../public/pdf/CV_Yuliia.pdf';
+import PropTypes from 'prop-types';
 
 const Button = ({ text, href, target }) => {
   if (href) {
@@ -26,6 +26,13 @@ const Button = ({ text, href, target }) => {
       </a>
     );
   }
+  return null;
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  target: PropTypes.string,
 };
 
 const About = () => {
@@ -39,18 +46,20 @@ const About = () => {
             <div className={styles.about__left}>
               <h2 className={styles.about__name}>I’m Yuliia Shevchenko</h2>
               <p className={`${styles.about__text} ${styles.text}`}>
-                I'm a passionate UX/UI designer with over 3 years of expertise
-                in crafting digital experiences that leave a mark. Design isn't
-                just a profession to me, it's my way of bringing creativity and
-                functionality together to have an impact. I do it all : mobile
-                apps, desktop apps, web apps, enterprise software, you name it.
-                My approach is creating immaculate and modern designs of the
-                highest standard. I work well with developers and create designs
-                that are user-friendly and easy to build. I provide smart
-                products, web and mobile solutions. My human-centered design
-                approach lets me empathize with your customers, identify their
-                pressure points, and create solutions that enhance their
-                experience with your brand or product.
+                I’m Yuliia Shevchenko, a UI/UX Designer obsessed with crafting
+                bold, intuitive, and unforgettable digital experiences. I don’t
+                just make things look good—I make them work flawlessly, so users
+                never have to think twice. Design, for me, is part creativity,
+                part strategy, and part rebellion against the ordinary. I thrive
+                on turning messy ideas into clean, functional products that feel
+                effortless and fresh.
+              </p>
+              <p className={`${styles.about__text} ${styles.text}`}>
+                From sleek mobile apps to complex platforms, I build experiences
+                that grab attention and keep people coming back. I believe every
+                click, swipe, and tap should spark a little excitement. If
+                you’re looking for design that dares to stand out—I’m already
+                one step ahead.
               </p>
               <Button text="View CV" href={pdf} target="_blank" />
             </div>

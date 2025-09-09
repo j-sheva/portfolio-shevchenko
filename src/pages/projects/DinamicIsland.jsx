@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectDetails from '../../components/ProjectDetails';
 import di1 from '../../assets/images/di1.png';
 import di2 from '../../assets/images/di2.png';

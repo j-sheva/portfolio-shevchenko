@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectDetails from '../../components/ProjectDetails';
 import nl1 from '../../assets/images/nl1.png';
 import nl2 from '../../assets/images/nl2.png';

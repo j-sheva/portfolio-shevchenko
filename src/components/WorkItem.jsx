@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import styles from './WorkItem.module.scss';
 
@@ -19,6 +19,13 @@ const WorkItem = ({ image, title, description, slug }) => {
       </div>
     </div>
   );
+};
+
+WorkItem.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
 };
 
 export default WorkItem;

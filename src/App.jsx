@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
@@ -10,6 +9,10 @@ import CZ from './pages/projects/CZ';
 import DinamicIsland from './pages/projects/DinamicIsland';
 import NoLimits from './pages/projects/NoLimits';
 import Village from './pages/projects/Village';
+import Venue from './pages/projects/Venue';
+import Qualoo from './pages/projects/Qualoo';
+import Aetlas from './pages/projects/Aetlas';
+import Major from './pages/projects/Major';
 
 const App = () => {
   return (
@@ -24,6 +27,10 @@ const App = () => {
       <Route path="/projects/dinamicisland" element={<DinamicIsland />} />
       <Route path="/projects/nolimits" element={<NoLimits />} />
       <Route path="/projects/village" element={<Village />} />
+      <Route path="/projects/venue" element={<Venue />} />
+      <Route path="/projects/qualoo" element={<Qualoo />} />
+      <Route path="/projects/aetlas" element={<Aetlas />} />
+      <Route path="/projects/major" element={<Major />} />
     </Routes>
   );
 };

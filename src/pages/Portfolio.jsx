@@ -1,5 +1,4 @@
 // src/pages/Home.jsx
-import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WorkItem from '../components/WorkItem';
@@ -9,6 +8,10 @@ import nlImage from '../assets/images/nl.png';
 import carImage from '../assets/images/car.png';
 import czImage from '../assets/images/cz.png';
 import aiImage from '../assets/images/ai.png';
+import vmImage from '../assets/images/vm.png';
+import quImage from '../assets/images/qu.png';
+import aeImage from '../assets/images/ae.png';
+import mlImage from '../assets/images/ml.png';
 import diImage from '../assets/images/di.png';
 
 const Portfolio = () => {
@@ -19,6 +22,35 @@ const Portfolio = () => {
         <section className={`${styles.works} ${styles.container}`}>
           <h2 className={`${styles.title} ${styles.works__title}`}>Works</h2>
           <div className={styles.works__grid}>
+            <div className={styles.works__row}>
+              <WorkItem
+                image={quImage}
+                title="Qualoo App"
+                description="Brand Identity, Mobile App"
+                slug="qualoo"
+              />
+              <WorkItem
+                image={mlImage}
+                title="MajorLabl"
+                description="Web App, Front End"
+                slug="major"
+              />
+            </div>
+
+            <div className={styles.works__row}>
+              <WorkItem
+                image={vmImage}
+                title="See You There"
+                description="Mobile App"
+                slug="venue"
+              />
+              <WorkItem
+                image={aeImage}
+                title="Aetlas"
+                description="Brand Identity, Web Platform"
+                slug="aetlas"
+              />
+            </div>
             <div className={styles.works__row}>
               <WorkItem
                 image={vrImage}
