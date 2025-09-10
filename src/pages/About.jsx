@@ -8,7 +8,7 @@ import easLogo from '../assets/svg/eas.svg';
 import nlLogo from '../assets/svg/nl.svg';
 import supLogo from '../assets/svg/sup.svg';
 import vrLogo from '../assets/svg/vr.svg';
-import pdf from '../../public/pdf/CV_Yuliia.pdf';
+import pdf from '../../public/pdf/CV_Yullia-Shevchenko_2025.pdf';
 import PropTypes from 'prop-types';
 
 const Button = ({ text, href, target }) => {
