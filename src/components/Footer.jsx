@@ -3,7 +3,7 @@
 import styles from "./Footer.module.scss";
 import { Link } from "react-router-dom";
 import logo from "../assets/svg/Shevchenko.svg";
-import pdf from "../../public/pdf/CV_Yullia-Shevchenko.pdf";
+import pdf from "../../public/pdf/CV_Yuliia_Shevchenko.pdf";
 
 const Footer = () => {
   return (
