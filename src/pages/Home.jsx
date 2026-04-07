@@ -20,7 +20,7 @@ const Home = () => {
         }
       },
       {
-        threshold: 0.6,
+        threshold: 0.4,
       },
     );
 
