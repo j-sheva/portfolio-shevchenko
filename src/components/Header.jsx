@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import styles from './Header.module.scss';
-import logo from '../assets/svg/Shevchenko.svg';
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import styles from "./Header.module.scss";
+import logo from "../assets/svg/Shevchenko.svg";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -9,14 +9,14 @@ const Header = () => {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden'; // Блокування прокрутки при відкритому меню
+      document.body.style.overflow = "hidden"; // Блокування прокрутки при відкритому меню
     } else {
-      document.body.style.overflow = 'visible'; // Відновлення прокрутки
+      document.body.style.overflow = "visible"; // Відновлення прокрутки
     }
 
     // Очищення ефекту при розмонтовуванні компоненту
     return () => {
-      document.body.style.overflow = 'visible';
+      document.body.style.overflow = "visible";
     };
   }, [isOpen]);
 
@@ -35,52 +35,40 @@ const Header = () => {
       <div className={styles.header__container}>
         <div className={styles.header__left}>
           <Link to="/">
-            {' '}
+            {" "}
             <img className={styles.header__logo} src={logo} alt="logo" />
           </Link>
         </div>
-        <nav className={`${styles.header__nav} ${isOpen ? styles.open : ''}`}>
+        <nav className={`${styles.header__nav} ${isOpen ? styles.open : ""}`}>
           <ul className={styles.header__list}>
             <li
               className={styles.header__item}
-              onClick={() => handleNavigation('/')}
+              onClick={() => handleNavigation("/Portfolio")}
             >
-              <Link to="/">Home</Link>
+              <Link to="/Portfolio">Work</Link>
             </li>
             <li
               className={styles.header__item}
-              onClick={() => handleNavigation('/Portfolio')}
-            >
-              <Link to="/Portfolio">Works</Link>
-            </li>
-            <li
-              className={styles.header__item}
-              onClick={() => handleNavigation('/About')}
+              onClick={() => handleNavigation("/About")}
             >
               <Link to="/About">About</Link>
-            </li>
-            <li
-              className={styles.header__item}
-              onClick={() => handleNavigation('/Contact')}
-            >
-              <Link to="/Contact">Contact</Link>
             </li>
           </ul>
         </nav>
         <div className={styles.header__burger} onClick={toggleMenu}>
           <span
             className={`${styles.header__burger__item} ${
-              isOpen ? styles.change1 : ''
+              isOpen ? styles.change1 : ""
             }`}
           ></span>
           <span
             className={`${styles.header__burger__item} ${
-              isOpen ? styles.change2 : ''
+              isOpen ? styles.change2 : ""
             }`}
           ></span>
           <span
             className={`${styles.header__burger__item} ${
-              isOpen ? styles.change3 : ''
+              isOpen ? styles.change3 : ""
             }`}
           ></span>
         </div>

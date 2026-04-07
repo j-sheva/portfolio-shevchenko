@@ -1,76 +1,198 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import styles from './About.module.scss';
-import aeLogo from '../assets/svg/aetlas.svg';
-import btLogo from '../assets/svg/bt.svg';
-import czLogo from '../assets/svg/cz.svg';
-import easLogo from '../assets/svg/eas.svg';
-import nlLogo from '../assets/svg/nl.svg';
-import supLogo from '../assets/svg/sup.svg';
-import vrLogo from '../assets/svg/vr.svg';
-import pdf from '../../public/pdf/CV_Yullia-Shevchenko_2025.pdf';
-import PropTypes from 'prop-types';
-
-const Button = ({ text, href, target }) => {
-  if (href) {
-    return (
-      <a
-        className={styles.button}
-        href={href}
-        target={target}
-        rel="noopener noreferrer"
-      >
-        <span className={styles.button__ellipse_left}></span>
-        {text}
-        <span className={styles.button__ellipse_right}></span>
-      </a>
-    );
-  }
-  return null;
-};
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  target: PropTypes.string,
-};
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import collage from "../assets/images/collage.png";
+import fig from "../assets/svg/fig.svg";
+import vs from "../assets/svg/vs.svg";
+import pho from "../assets/svg/pho.svg";
+import lot from "../assets/svg/lot.svg";
+import ill from "../assets/svg/ill.svg";
+import gpt from "../assets/svg/gpt.svg";
+import gem from "../assets/svg/gem.svg";
+import free from "../assets/svg/free.svg";
+import styles from "./About.module.scss";
 
 const About = () => {
   return (
     <div>
       <Header />
       <main>
-        <section className={`${styles.about} ${styles.container}`}>
-          <h2 className={`${styles.title} ${styles.about__title}`}>About</h2>
-          <div className={styles.about__content}>
-            <div className={styles.about__left}>
-              <h2 className={styles.about__name}>I’m Yuliia Shevchenko</h2>
-              <p className={`${styles.about__text} ${styles.text}`}>
-                I’m Yuliia Shevchenko, a UI/UX Designer obsessed with crafting
-                bold, intuitive, and unforgettable digital experiences. I don’t
-                just make things look good—I make them work flawlessly, so users
-                never have to think twice. Design, for me, is part creativity,
-                part strategy, and part rebellion against the ordinary. I thrive
-                on turning messy ideas into clean, functional products that feel
-                effortless and fresh.
-              </p>
-              <p className={`${styles.about__text} ${styles.text}`}>
-                From sleek mobile apps to complex platforms, I build experiences
-                that grab attention and keep people coming back. I believe every
-                click, swipe, and tap should spark a little excitement. If
-                you’re looking for design that dares to stand out—I’m already
-                one step ahead.
-              </p>
-              <Button text="View CV" href={pdf} target="_blank" />
-            </div>
+        <section className={styles.about}>
+          <h2>About</h2>
+          <div className={styles.about__block}>
+            <img className={styles.about__left} src={collage} alt="collage" />
             <div className={styles.about__right}>
-              <img src={btLogo} alt="BlockTrust logo" />
-              <img src={easLogo} alt="European Apps Solutions logo" />
-              <img src={supLogo} alt="Support Your App logo" />
-              <img src={czLogo} alt="Colt CZ Group logo" />
-              <img src={nlLogo} alt="No Limits logo" />
-              <img src={vrLogo} alt="Village Key logo" />
-              <img src={aeLogo} alt="Aetlas logo" />
+              <h3>Yuliia Shevchenko</h3>
+              <div className={styles.about__bottom}>
+                <div className={styles.about__copy_item}>
+                  <p className={styles.about__subtitle}>01 The Approach</p>
+                  <div className={styles.about__copy}>
+                    <p className={styles.about__text}>
+                      I’m a UX/UI Designer with 4+ years of experience designing
+                      mobile and web products. I focus on simplifying complex
+                      user flows, improving usability, and creating interfaces
+                      that are clear, intuitive, and easy to navigate.
+                    </p>
+                    <p className={styles.about__text}>
+                      I’ve worked on a range of products, often dealing with
+                      complex structures and user scenarios. I enjoy turning
+                      that complexity into simple, structured experiences that
+                      feel natural to use.
+                    </p>
+                    <p className={styles.about__text}>
+                      I also have experience working with design systems and
+                      collaborating closely with developers, which helps me
+                      create scalable and technically feasible solutions.
+                      Currently, I’m focused on growing as a product designer
+                      and building more impactful, user-centered products.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.about__copy_item}>
+                  <p className={styles.about__subtitle}>02 Beyond design</p>
+                  <div className={styles.about__copy}>
+                    <p className={styles.about__text}>
+                      Outside of work, I’m a very visual and hands-on person. I
+                      enjoy creating not only digital products but also working
+                      with physical things — especially customizing and
+                      designing clothing.
+                    </p>
+                    <p className={styles.about__text}>
+                      I also love traveling and exploring different cultures —
+                      I’ve visited 36 countries so far, and it continues to
+                      shape how I see people, behavior, and design.
+                    </p>
+                    <p className={styles.about__text}>
+                      For me, design isn’t just a job — it’s a way of thinking
+                      and a way of seeing the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.path}>
+          <h3>PATH</h3>
+          <div className={styles.path__list}>
+            <div className={styles.path__item}>
+              <p className={styles.path__year}>2025 – 2026 </p>
+              <div className={styles.path__copy}>
+                <p className={styles.path__title}>
+                  UX/UI Designer — Cobalt Creative Agency
+                </p>
+                <p className={styles.about__text}>
+                  Designing web experiences and improving user flows for digital
+                  products.
+                </p>
+              </div>
+            </div>
+            <div className={styles.path__item}>
+              <p className={styles.path__year}>2024 – 2025 </p>
+              <div className={styles.path__copy}>
+                <p className={styles.path__title}>
+                  UX/UI Designer — Evadav Traffic Group
+                </p>
+                <p className={styles.about__text}>
+                  Worked on mobile applications, improving user flows and
+                  reducing friction, contributing to better engagement and
+                  conversion.
+                </p>
+              </div>
+            </div>
+            <div className={styles.path__item}>
+              <p className={styles.path__year}>2024 </p>
+              <div className={styles.path__copy}>
+                <p className={styles.path__title}>
+                  UX designer / Front-End — Startups
+                </p>
+                <p className={styles.about__text}>
+                  Designed and built interfaces for early-stage products,
+                  focusing on usability and structure.
+                </p>
+              </div>
+            </div>
+            <div className={styles.path__item}>
+              <p className={styles.path__year}>2022 – 2024 </p>
+              <div className={styles.path__copy}>
+                <p className={styles.path__title}>UX Designer — BlockTrust</p>
+                <p className={styles.about__text}>
+                  Designed Web3 dashboards and worked on design systems for
+                  complex products.
+                </p>
+              </div>
+            </div>
+            <div className={styles.path__item}>
+              <p className={styles.path__year}>2021 – 2022 </p>
+              <div className={styles.path__copy}>
+                <p className={styles.path__title}>
+                  UX/UI Designer — SupportYourApp
+                </p>
+                <p className={styles.about__text}>
+                  Designed and improved internal web tools, worked on brand
+                  identity, and marketing materials.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.path}>
+          <h3>Toolkit</h3>
+          <div className={styles.toolkit}>
+            <div className={styles.toolkit__item}>
+              <img src={fig} alt="Figma icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Figma</p>
+                <p className={styles.about__text}>Design</p>
+              </div>
+            </div>
+            <div className={styles.toolkit__item}>
+              <img src={free} alt="Freepik icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Freepik AI</p>
+                <p className={styles.about__text}>Images</p>
+              </div>
+            </div>{" "}
+            <div className={styles.toolkit__item}>
+              <img src={gpt} alt="Chat GPT icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Chat GPT</p>
+                <p className={styles.about__text}>General</p>
+              </div>
+            </div>{" "}
+            <div className={styles.toolkit__item}>
+              <img src={gem} alt="Gemini icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Gemini</p>
+                <p className={styles.about__text}>General</p>
+              </div>
+            </div>
+            <div className={styles.toolkit__item}>
+              <img src={ill} alt="Illustrator icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Illustrator</p>
+                <p className={styles.about__text}>Vectors</p>
+              </div>
+            </div>
+            <div className={styles.toolkit__item}>
+              <img src={pho} alt="Photoshop icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Photoshop</p>
+                <p className={styles.about__text}>Photo editing</p>
+              </div>
+            </div>
+            <div className={styles.toolkit__item}>
+              <img src={lot} alt="Lottie Files icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>Lottie Files</p>
+                <p className={styles.about__text}>Animations</p>
+              </div>
+            </div>
+            <div className={styles.toolkit__item}>
+              <img src={vs} alt="Figma icon" />
+              <div className={styles.toolkit__copy}>
+                <p className={styles.path__year}>VS Code</p>
+                <p className={styles.about__text}>Coding</p>
+              </div>
             </div>
           </div>
         </section>

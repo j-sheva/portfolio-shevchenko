@@ -1,12 +1,27 @@
 // src/components/Footer.jsx
 
-import styles from './Footer.module.scss';
+import styles from "./Footer.module.scss";
+import { Link } from "react-router-dom";
+import logo from "../assets/svg/Shevchenko.svg";
+import pdf from "../../public/pdf/CV_Yullia-Shevchenko.pdf";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p className={styles.footer__copy}>© Yuliia Shevchenko 2025</p>
+      <Link to="/">
+        {" "}
+        <img className={styles.header__logo} src={logo} alt="logo" />
+      </Link>
       <ul className={styles.footer__links}>
+        <li className={styles.footer__link}>
+          <a
+            href="mailto:work.uliia@gmail.com?subject=Job opportunity&body=Hi Yuliia,"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            work.uliia@gmail.com
+          </a>
+        </li>
         <li className={styles.footer__link}>
           <a
             href="https://www.linkedin.com/in/uliia-shevchenko/"
@@ -17,15 +32,12 @@ const Footer = () => {
           </a>
         </li>
         <li className={styles.footer__link}>
-          <a
-            href="https://www.behance.net/yuliiashevche4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Behance
+          <a href={pdf} target="_blank" rel="noopener noreferrer">
+            Resume
           </a>
         </li>
       </ul>
+      <p className={styles.footer__copy}>© Yuliia Shevchenko 2026</p>
     </footer>
   );
 };

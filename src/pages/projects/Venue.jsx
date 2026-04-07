@@ -1,18 +1,54 @@
-import ProjectDetails from '../../components/ProjectDetails';
-import vm1 from '../../assets/images/vm1.png';
-import vm2 from '../../assets/images/vm2.png';
+import ProjectDetails from "../../components/ProjectDetails";
+import vm1 from "../../assets/images/vm1.png";
+import vm2 from "../../assets/images/vm2.png";
+import vm3 from "../../assets/images/vm3.png";
+import vm4 from "../../assets/images/vm4.png";
 
 const Venue = () => {
   return (
     <ProjectDetails
-      title="See You There"
-      introduction="See You There is a social discovery mobile app designed to connect people in real time, based on shared spaces and interests. Unlike traditional dating apps, its focus is broader—it helps users find like-minded individuals, new friends, or even business opportunities. For example, while sitting in a bar, a user can see who else is currently there and open to conversation, explore their profile, and discover common interests. The app bridges the gap between digital connections and real-life interactions, making networking spontaneous and effortless."
-      request="The challenge was to design an interface that encourages organic connections without overwhelming the user with noise or pressure. Unlike typical dating platforms, See You There needed to feel inclusive, versatile, and safe—supporting multiple use cases, from casual chats to professional networking. The app required a design that balances simplicity with social context, guiding users smoothly from discovery to meaningful interaction."
-      solution="I created the complete UI and UX design for the app, focusing on intuitive flows that reduce friction in social discovery. The design prioritizes clarity—users can easily navigate nearby profiles, explore interests, and start conversations in just a few taps. Visual elements emphasize warmth and inclusivity, while subtle interface cues communicate safety and consent in interactions. By carefully blending modern UI aesthetics with thoughtful UX principles, I delivered a product that feels approachable, versatile, and engaging. The result is an app that transforms casual presence in a space into opportunities for real-world connection."
-      text="View website"
+      type="MOBILE APP"
+      title="Turning Presence into Connection "
+      description="Designed a real-time social discovery experience that helps users connect with people nearby based on shared context and interests."
       link=""
+      role="UX/UI Designer"
+      platform="iOS & Android  "
+      scope="End-to-end product design (concept for client project)  "
+      problemText={[
+        "See You There is a social discovery app designed to connect people in real-world environments.",
+        "However, enabling real-time interactions between strangers introduces several challenges — users need to feel safe, understand context, and not feel overwhelmed by too many options.",
+        "The main challenges:",
+      ]}
+      problemList={[
+        "creating a low-pressure environment for interaction  ",
+        "avoiding “dating app” perception and expectations  ",
+        "balancing discovery with user privacy and safety  ",
+        "preventing overload of nearby profiles and information  ",
+      ]}
+      goal="Design a seamless and comfortable experience that encourages organic connections, while maintaining clarity, safety, and ease of interaction."
+      what={[
+        "Designed end-to-end user flows for discovery, profiles, and interaction  ",
+        "Simplified how users explore nearby people and shared interests  ",
+        "Structured interactions to feel natural and low-pressure  ",
+        "Introduced UI patterns that communicate safety and consent  ",
+        "Balanced visibility of users with a clean and uncluttered interface  ",
+        "Created a modern, inclusive visual style aligned with social context  ",
+      ]}
+      solution={[
+        "The designed experience enables users to effortlessly discover people around them and initiate conversations in a natural way.",
+        "The interface reduces friction by focusing on context — who is nearby, what they’re interested in, and how to connect.",
+        "Design decisions emphasize comfort and trust, making interactions feel safe, casual, and spontaneous rather than forced.",
+      ]}
+      up_copy="Trust in connecting with nearby users  "
+      down_copy="Barriers to real-time interaction  "
+      learnings={[
+        "Designing social products requires understanding not only user flows, but also human behavior and emotions.",
+        "Reducing pressure and increasing clarity in interactions helps users feel more confident and improves overall engagement potential.",
+      ]}
       image1={vm1}
       image2={vm2}
+      image3={vm3}
+      image4={vm4}
     />
   );
 };

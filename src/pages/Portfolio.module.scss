@@ -1,50 +1,41 @@
-@import '../styles/variables';
-@import '../styles/mixins';
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .works {
   display: flex;
+  padding: 160px 200px 120px 200px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 120px 48px 80px 48px;
+  gap: 40px;
+  @include max-width(1024px) {
+    padding: 80px 80px 40px 80px;
+  }
   @include max-width(768px) {
-    padding: 100px 32px 80px 32px;
+    padding: 80px 40px;
+    gap: 16px;
   }
-  &__title {
-    padding-bottom: 80px;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 48px; /* 120% */
+    @include max-width(768px) {
+      font-size: 24px;
+    }
   }
-  &__grid {
+
+  &__list {
     display: flex;
     flex-direction: column;
-    gap: 80px;
-
-    @include max-width(1024px) {
-      gap: 24px;
-    }
-  }
-
-  &__row {
-    display: flex;
-    gap: 40px;
-    @include max-width(1024px) {
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    @include max-width(768px) {
       gap: 16px;
     }
-    @include max-width(768px) {
-      flex-direction: column;
-      gap: 24px;
-    }
-  }
-}
-.title {
-  color: #ffffff;
-  text-align: center;
-  font-family: 'Inria Serif';
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 72px; /* 128.571% */
-  @include max-width(768px) {
-    padding-bottom: 40px;
-    font-size: 40px;
   }
 }

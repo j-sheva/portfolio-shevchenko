@@ -1,5 +1,5 @@
-@import '../styles/variables';
-@import '../styles/mixins';
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .contact {
   padding: 160px 118px;
@@ -39,7 +39,7 @@
       font-family: $inter;
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       display: flex;
       align-items: center;
@@ -94,7 +94,7 @@
     font-family: $inria-serif;
     font-size: 56px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 72px; /* 128.571% */
     @include max-width(768px) {
       padding-bottom: 40px;

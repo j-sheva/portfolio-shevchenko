@@ -1,18 +1,53 @@
-import ProjectDetails from '../../components/ProjectDetails';
-import car1 from '../../assets/images/car1.png';
-import car2 from '../../assets/images/car2.png';
+import ProjectDetails from "../../components/ProjectDetails";
+import car1 from "../../assets/images/car1.png";
+import car2 from "../../assets/images/car2.png";
+import car3 from "../../assets/images/car3.png";
 
 const CarKey = () => {
   return (
     <ProjectDetails
-      title="Digital Smart Car Key"
-      introduction="Introducing Car Connect — MY CAR KEYS, a mobile app for tracking, monitoring, and unlocking your car. Check fuel reserves, oil level, tire pressure, and more with a tap. Find your parked car quickly with smartphone map integration. Secure or access your car with a powerful lock/unlock system. Locate gas stations, EV charging stations, and parking lots with the live map feature. Compatible with popular car makes like Audi, BMW, Buick, and more."
-      request="The design of the app must focus on user experience, featuring an intuitive interface and modern aesthetics that match current design trends. It should seamlessly integrate functional elements like navigation and interaction tools to improve user engagement. Furthermore, the design needs to be adaptable across different screen sizes and resolutions to cater to various mobile devices. By prioritizing these aspects, we aim to create a compelling and user-friendly experience for our app users."
-      solution="The design solution for the Car Connect — My Car Keys app focuses on a user-friendly interface with a dashboard displaying essential vehicle information, including fuel reserves, oil level, and tire pressure, through intuitive icons and progress bars. A GPS-enabled car finder feature helps users locate their parked vehicles quickly, while a secure lock/unlock system ensures vehicle safety and accessibility. Integrated maps display nearby gas stations, EV charging stations, and parking lots, complete with filters and user reviews for convenience. Usability testing and user feedback drive iterative improvements to ensure a seamless and intuitive experience for Car Connect users."
-      text="Open in the Apple Store"
-      link="https://apps.apple.com/ua/app/digital-smart-car-key/id1636750385?l=uk"
+      type="MOBILE APP"
+      title="Simplifying Car Control into One Tap "
+      description="Designed a mobile app that centralizes vehicle monitoring, control, and navigation into a seamless and intuitive experience."
+      link=""
+      role="UX/UI Designer"
+      platform="iOS"
+      scope="End-to-end product design "
+      problemText={[
+        "Car Connect is a mobile app that allows users to monitor and control their vehicle remotely.",
+        "However, combining multiple features — such as vehicle status tracking, navigation, and remote control — can easily lead to overloaded interfaces and poor usability.",
+        "The main challenges:",
+      ]}
+      problemList={[
+        "combining multiple features without overwhelming the user  ",
+        "ensuring fast access to critical actions (lock/unlock, status)  ",
+        "presenting technical car data in a clear and understandable way  ",
+        "maintaining consistency across different devices and car brands  ",
+      ]}
+      goal="Design a clean and intuitive experience that gives users quick access to essential car functions while simplifying complex data and interactions."
+      what={[
+        "Designed end-to-end user flows for monitoring, navigation, and remote control  ",
+        "Created a dashboard with clear prioritization of key vehicle data  ",
+        "Simplified technical information into visual and easy-to-scan UI elements  ",
+        "Designed fast-access interactions for critical actions like lock/unlock  ",
+        "Integrated map-based features for navigation and nearby services  ",
+        "Ensured responsive design across devices and screen sizes  ",
+        "Iterated based on usability testing and user feedback  ",
+      ]}
+      solution={[
+        "The app provides a centralized dashboard where users can quickly access essential vehicle information and controls.",
+        "Complex data is translated into clear visual indicators, while key actions are доступні in just a few taps.",
+        "The experience balances functionality with simplicity, allowing users to interact with their vehicle efficiently and confidently.",
+      ]}
+      up_copy="Clarity of vehicle data and controls  "
+      down_copy="Time to access key car functions  "
+      learnings={[
+        "Designing feature-rich products requires strong prioritization and information hierarchy.",
+        "Focusing on quick access and clarity helps users efficiently interact with complex systems in everyday scenarios.",
+      ]}
       image1={car1}
       image2={car2}
+      image3={car3}
     />
   );
 };
