@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import collage from "../assets/images/collage.png";
+import collage from "../assets/images/yuliia.png";
 import fig from "../assets/svg/fig.svg";
 import vs from "../assets/svg/vs.svg";
 import pho from "../assets/svg/pho.svg";
@@ -19,7 +19,11 @@ const About = () => {
         <section className={styles.about}>
           <h2>About</h2>
           <div className={styles.about__block}>
-            <img className={styles.about__left} src={collage} alt="collage" />
+            <img
+              className={styles.about__left}
+              src={collage}
+              alt="Yuliia Shevchenko"
+            />
             <div className={styles.about__right}>
               <h3>Yuliia Shevchenko</h3>
               <div className={styles.about__bottom}>
@@ -27,23 +31,12 @@ const About = () => {
                   <p className={styles.about__subtitle}>01 The Approach</p>
                   <div className={styles.about__copy}>
                     <p className={styles.about__text}>
-                      I’m a UX/UI Designer with 4+ years of experience designing
-                      mobile and web products. I focus on simplifying complex
-                      user flows, improving usability, and creating interfaces
-                      that are clear, intuitive, and easy to navigate.
-                    </p>
-                    <p className={styles.about__text}>
-                      I’ve worked on a range of products, often dealing with
-                      complex structures and user scenarios. I enjoy turning
-                      that complexity into simple, structured experiences that
-                      feel natural to use.
-                    </p>
-                    <p className={styles.about__text}>
-                      I also have experience working with design systems and
-                      collaborating closely with developers, which helps me
-                      create scalable and technically feasible solutions.
-                      Currently, I’m focused on growing as a product designer
-                      and building more impactful, user-centered products.
+                      I design mobile and web products for complex domains — AI
+                      tools, Web3 platforms, B2B marketplaces, SaaS. My focus is
+                      always the same: take something technically dense and make
+                      it feel obvious to the person using it. I work end-to-end,
+                      from research to developer handoff, with a strong eye for
+                      systems and scalability.
                     </p>
                   </div>
                 </div>
@@ -51,19 +44,9 @@ const About = () => {
                   <p className={styles.about__subtitle}>02 Beyond design</p>
                   <div className={styles.about__copy}>
                     <p className={styles.about__text}>
-                      Outside of work, I’m a very visual and hands-on person. I
-                      enjoy creating not only digital products but also working
-                      with physical things — especially customizing and
-                      designing clothing.
-                    </p>
-                    <p className={styles.about__text}>
-                      I also love traveling and exploring different cultures —
-                      I’ve visited 36 countries so far, and it continues to
-                      shape how I see people, behavior, and design.
-                    </p>
-                    <p className={styles.about__text}>
-                      For me, design isn’t just a job — it’s a way of thinking
-                      and a way of seeing the world.
+                      Outside of work I customize and design clothing, and I've
+                      traveled to 36 countries — which continues to shape how I
+                      think about people, behavior, and design.
                     </p>
                   </div>
                 </div>
@@ -81,8 +64,9 @@ const About = () => {
                   UX/UI Designer — Cobalt Creative Agency
                 </p>
                 <p className={styles.about__text}>
-                  Designing web experiences and improving user flows for digital
-                  products.
+                  Designing e-commerce websites for consumer brands — food,
+                  fashion, pharma. Focus on distinctive UI, motion design, and
+                  brand identity that converts.
                 </p>
               </div>
             </div>
@@ -93,9 +77,9 @@ const About = () => {
                   UX/UI Designer — Evadav Traffic Group
                 </p>
                 <p className={styles.about__text}>
-                  Worked on mobile applications, improving user flows and
-                  reducing friction, contributing to better engagement and
-                  conversion.
+                  Redesigned mobile app interfaces (iOS & Android) to improve
+                  conversion across onboarding flows and paywalls. Built
+                  scalable design systems across multiple products.
                 </p>
               </div>
             </div>
@@ -106,8 +90,9 @@ const About = () => {
                   UX designer / Front-End — Startups
                 </p>
                 <p className={styles.about__text}>
-                  Designed and built interfaces for early-stage products,
-                  focusing on usability and structure.
+                  Designed and built interfaces for three early-stage products:
+                  a carbon credit B2B marketplace, a network diagnostics app
+                  redesign, and a health company website (React + Strapi).
                 </p>
               </div>
             </div>
@@ -116,8 +101,10 @@ const About = () => {
               <div className={styles.path__copy}>
                 <p className={styles.path__title}>UX Designer — BlockTrust</p>
                 <p className={styles.about__text}>
-                  Designed Web3 dashboards and worked on design systems for
-                  complex products.
+                  Designed Web3 platforms for global brands — auction
+                  marketplace, amusement park gamification, blockchain
+                  dashboards. Built design systems and shipped products used
+                  across US and European markets.
                 </p>
               </div>
             </div>
@@ -128,8 +115,8 @@ const About = () => {
                   UX/UI Designer — SupportYourApp
                 </p>
                 <p className={styles.about__text}>
-                  Designed and improved internal web tools, worked on brand
-                  identity, and marketing materials.
+                  Designed internal web tools and brand identity materials for a
+                  large customer support company.
                 </p>
               </div>
             </div>
